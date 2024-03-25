@@ -17,55 +17,5 @@
   <script src="script.js"></script>
 </body>
 
-<script>
-    const app = document.getElementById("app");
-const startButton = document.getElementById("start-button");
-const content = document.getElementById("content");
 
-startButton.addEventListener("click", () => {
-  // ゲームスタート
-  // 問題1を表示
-  const question1 = document.createElement("div");
-  question1.innerHTML = "問題1: これは何でしょう？";
-  content.appendChild(question1);
-
-  // ヒントボタン
-  const hintButton = document.createElement("button");
-  hintButton.textContent = "ヒント";
-  hintButton.addEventListener("click", () => {
-    // ヒントを表示
-    const hint = document.createElement("div");
-    hint.innerHTML = "ヒント：これは四角形で、数字が書いてあります。";
-    content.appendChild(hint);
-  });
-
-  // 答え入力フォーム
-  const answerForm = document.createElement("form");
-  const answerInput = document.createElement("input");
-  answerInput.type = "text";
-  answerInput.name = "answer";
-  const answerSubmitButton = document.createElement("button");
-  answerSubmitButton.type = "submit";
-  answerSubmitButton.textContent = "回答";
-  answerForm.appendChild(answerInput);
-  answerForm.appendChild(answerSubmitButton);
-  content.appendChild(answerForm);
-
-  answerForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    // 答えが正しければ次の問題へ
-    if (answerInput.value === "正解") {
-      // 問題2を表示
-      // ...
-
-    } else {
-      // 誤答メッセージを表示
-      const errorMessage = document.createElement("div");
-      errorMessage.innerHTML = "不正解です。もう一度考えてみましょう。";
-      content.appendChild(errorMessage);
-    }
-  });
-});
-</script>
 </html>

@@ -29,16 +29,65 @@
         {id: 11, label: '土井 ゆりか'},
         {id: 12, label: '原 広行'},
         {id: 13, label: '宇都宮 雅敬'},
-        {id: 14, label: '三浦 千哲'}
+        {id: 14, label: '三浦 千哲'},
+        {id: 15, label: '田中 敬也'},
+        {id: 16, label: '熊谷 洋平'},
+        {id: 17, label: '高橋 伸明'}
         
     ]);
 
     // create an array with edges
     var edges = new vis.DataSet([
-        {from: 1, to: 3},
-        {from: 1, to: 2},
-        {from: 2, to: 4},
-        {from: 2, to: 5}
+        {from: 1, to: 12},
+{from: 1, to: 9},
+{from: 1, to: 13},
+        {from: 2, to: 3},
+{from: 2, to: 12},
+{from: 2, to: 5},
+{from: 2, to: 2},
+{from: 2, to: 10},
+        {from: 3, to: 12},
+{from: 3, to: 5},
+{from: 3, to: 6},
+{from: 3, to: 7},
+{from: 3, to: 8},
+{from: 3, to: 14},
+{from: 3, to: 2},
+        {from: 4, to: 3},
+{from: 4, to: 12},
+{from: 4, to: 6},
+
+{from: 5, to: 3},
+{from: 5, to: 6},
+{from: 5, to: 8},
+{from: 5, to: 2},
+
+{from: 6, to: 5},
+{from: 6, to: 8},
+
+{from: 7, to: 3},
+{from: 7, to: 12},
+{from: 7, to: 10},
+
+{from: 8, to: 3},
+{from: 8, to: 15},
+{from: 8, to: 8},
+{from: 8, to: 5},
+{from: 8, to: 6},
+{from: 8, to: 14},
+
+{from: 9, to: 12},
+{from: 9, to: 5},
+{from: 9, to: 6},
+{from: 9, to: 14},
+
+{from: 10, to: 7},
+{from: 10, to: 2},
+
+{from: 11, to: 16},
+{from: 11, to: 17},
+{from: 11, to: 10},
+{from: 11, to: 13},
     ]);
 
     // create a network
